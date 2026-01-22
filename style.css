@@ -27,11 +27,15 @@ body {
 
 /* main styles region */
 .card {
-    border: 1px solid var(--wf-main-color);
-    padding: 0.5rem;
-    margin: 1rem 2rem
+    border: 2px solid var(--wf-main-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    min-height: 120px;
 }
 
 #app_main {
+    padding: 1rem 2rem;
     border-bottom: 2px solid;
 }
+
+/* footer styles region */
