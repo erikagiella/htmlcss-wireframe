@@ -35,10 +35,12 @@ body {
 
 #app_main {
     padding: 1rem 2rem;
-    border-bottom: 2px solid;
+    min-height: 800px;
+
 }
 
 /* footer styles region */
 #app_footer {
     padding: 1rem;
+    border-top: 2px solid;
 }
