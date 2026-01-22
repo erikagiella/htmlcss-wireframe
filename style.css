@@ -39,3 +39,6 @@ body {
 }
 
 /* footer styles region */
+#app_footer {
+    padding: 1rem;
+}
