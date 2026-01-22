@@ -1,0 +1,37 @@
+/* general styles region */
+:root {
+    --wf-main-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hr_bold {
+    border: solid 1px var(--wf-main-color);
+}
+
+/* body styles region */
+body {
+    color: var(--wf-main-color);
+    width: 512px;
+}
+
+#app_header {
+    padding: 1rem;
+    border-bottom: 2px solid;
+}
+
+
+/* main styles region */
+.card {
+    border: 1px solid var(--wf-main-color);
+    padding: 0.5rem;
+    margin: 1rem 2rem
+}
+
+#app_main {
+    border-bottom: 2px solid;
+}
