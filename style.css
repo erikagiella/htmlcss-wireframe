@@ -1,6 +1,8 @@
 /* general styles region */
 :root {
     --wf-main-color: #000000;
+    --wf-header-bg: #0012b3;
+    --wf-card-bg: hsl(192, 100%, 50%, 0.5);
 }
 
 * {
@@ -9,25 +11,56 @@
     box-sizing: border-box;
 }
 
-.hr_bold {
-    border: solid 1px var(--wf-main-color);
-}
-
 /* body styles region */
 body {
-    color: var(--wf-main-color);
     width: 512px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* header styles region*/
 #app_header {
+    text-align: center;
     padding: 1rem;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--wf-main-color);
+    color: white;
+    background-color: var(--wf-header-bg);
+    letter-spacing: 4px;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+/*crown icon animation*/
+.jelly {
+    animation: jelly 0.6s ease-in-out infinite;
+}
+
+@keyframes jelly {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
 }
 
 
 /* main styles region */
 .card {
     border: 2px solid var(--wf-main-color);
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
     padding: 1rem;
     margin-bottom: 1rem;
     min-height: 120px;
@@ -35,12 +68,13 @@ body {
 
 #app_main {
     padding: 1rem 2rem;
-    min-height: 800px;
+    min-height: 700px;
+    background: linear-gradient(180deg, #ffb6b6 0%, #008cff 60%, #ffc400 100%);
 
 }
 
 /* footer styles region */
 #app_footer {
     padding: 1rem;
-    border-top: 2px solid;
+    border-top: 2px solid var(--wf-main-color);
 }
