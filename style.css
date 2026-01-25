@@ -1,8 +1,10 @@
 /* general styles region */
 :root {
-    --wf-main-color: #000000;
+    --wf-text-dark: #000000;
     --wf-header-bg: #0012b3;
     --wf-card-bg: hsl(192, 100%, 50%, 0.5);
+    --wf-main-bg: linear-gradient(180deg, #f75d5d 0%, #008cff 60%, #ffc400 100%);
+    --wf-text-light: #FFFFFF;
 }
 
 * {
@@ -21,11 +23,14 @@ body {
 #app_header {
     text-align: center;
     padding: 1rem;
-    border-bottom: 2px solid var(--wf-main-color);
-    color: white;
     background-color: var(--wf-header-bg);
     letter-spacing: 4px;
     font-family: "Cherry Bomb One", system-ui;
+    color: var(--wf-text-light);
+}
+
+.title {
+    font-size: 2.5rem;
 }
 
 /*crown icon animation*/
@@ -64,17 +69,28 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
     min-height: 120px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5)
+}
+
+.card_title {
+    font-family: "Chewy", system-ui;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 #app_main {
     padding: 1rem 2rem;
     min-height: 700px;
-    background: linear-gradient(180deg, #ffb6b6 0%, #008cff 60%, #ffc400 100%);
-
+    background: var(--wf-main-bg)
 }
 
 /* footer styles region */
 #app_footer {
     padding: 1rem;
-    border-top: 2px solid var(--wf-main-color);
+    background-color: var(--wf-header-bg);
+    font-family: "Cherry Bomb One", system-ui;
+    color: var(--wf-text-light);
+    font-size: 1.2rem;
 }
