@@ -17,11 +17,11 @@
 body {
     width: 512px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 /* header styles region*/
 #app_header {
-    text-align: center;
     padding: 1rem;
     background-color: var(--wf-header-bg);
     letter-spacing: 4px;
@@ -69,7 +69,6 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
     min-height: 120px;
-    text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5)
 }
 
